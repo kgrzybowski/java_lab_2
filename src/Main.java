@@ -23,5 +23,50 @@ public class Main {
         */
 
 
+        {
+            /* nr indeksu 59931 */
+        /*    int i = 1000;
+            System.out.println("\n");
+            do {
+                System.out.print("\nLiczba: " + i);
+                if (i % 31 == 0) {
+                    System.out.println(" jest podzielna przez 31");
+                }
+            } while (--i > 0);
+        */
+        }
+        /* 2a
+        int[] tab1 = {3, 7, 15, 21, 42};
+        int i = 0;
+        while (i < 5) {
+            System.out.println("i " + i + ": " + tab1[i]);
+            ++i;
+        } */
+
+        /* 2b
+        {
+            double[] tab2 = {3.22, 7.65, 15.441, 21.958, 42.874};
+            int j = 0;
+            while (j < 5) {
+                System.out.println("i " + j + ": " + tab2[j]);
+                ++j;
+            } */
+
+        {
+            String[] tab3 = {"Karol", "Mateusz", "Kuba", "Karolina", "Andrzej"};
+            int j = 0;
+            while (j < 5) {
+                System.out.println("i " + j + ": " + tab3[j]);
+                ++j;
+            }
+
+            while (true) {
+                System.out.println("raz");
+            }
+        }
+        /*
+            while (false) {
+            System.out.println("raz");
+        } */
     }
 }
