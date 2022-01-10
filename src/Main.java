@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
@@ -14,5 +15,29 @@ public class Main {
          * za pomocą pętli forEach powiększone o 11 */
 
 
+
+        /* zad 1 */
+
+        /* for (int i = 100; i >= 0; i--) {
+            System.out.print("\nliczba: " + i);
+            if (i % 1 == 0) {
+                System.out.print(" - podzielna przez 1");
+            }
+        } */
+
+        /* zad 2 */
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("\nPodaj pięć liczb.");
+        int[] liczba = new int[5];
+        for(int i=0;i<5;i++){
+            liczba[i] = in.nextInt();
+        }
+        for(int i=0;i<5;i++){
+            System.out.println(liczba[i]);
+        }
+        for (int x : liczba) {
+            System.out.println(x + 11);
+        }
     }
 }
