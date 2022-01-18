@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -37,6 +38,62 @@ public class Main {
         c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
         */
 
+        met2(met1());
+        String a[]=new String[6];
+        met3(a);
+        met4(a);
+        met5("Karol");
+        met5("Karol", "Grzybowski");
+        met5("Karol", "Grzybowski",25);
+        int zmiennaA = (met6(6,7));
+        int zmiennaB = (met6(3,2,1));
+        System.out.println("wynik: "+(met6(6,7))+ "wynik: "+met6(3,2,1));
+    }
+    public  static int [] met1 () {
+        int[] a = {40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20};
+
+
+        return a;
+    }
+    public static void met2 (int[]a) {
+        for (int number : a) {
+            System.out.println("This is: " + number);
+        }
+    }
+    public static void  met3  (String[] a){
+        Scanner in = new Scanner(System.in);
+        int i=0;
+        for (String element :a ){
+            System.out.println("\nPodaj " + (i + 1) + " element  tablicy: ");
+            a [i]=in.nextLine();
+            i++;
+        }
+    }
+    public static void met4(String []a){
+        System.out.print("Wywolujemy elementy tablicy od ostatniego elementu \n");
+        for (int i=a.length-1;i>=0;i--){
+            System.out.println(a[i]);
+
+        }
+    }
+    public static void met5(String imie){
+        System.out.println("Imię "+imie);
+
+    }
+    public static void met5(String imie, String nazwisko){
+        System.out.println("Imię "+imie+" Nazwisko "+nazwisko);
+
+    }
+    public static void met5(String imie,String nazwisko, int wiek){
+
+        System.out.println("Imię "+imie+" Nazwisko "+nazwisko+" wiek "+wiek);
+    }
+
+    public static int met6(int a , int b){
+        return a+b;
+    }
+    public static int met6(int a,int b,int c){
+        return a+b+c;
 
     }
 
